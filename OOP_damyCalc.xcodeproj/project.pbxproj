@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9C30DE215EA635D009BA0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C30DE115EA635D009BA0FF /* UIKit.framework */; };
+		E9C30DE415EA635D009BA0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C30DE315EA635D009BA0FF /* Foundation.framework */; };
+		E9C30DE615EA635D009BA0FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C30DE515EA635D009BA0FF /* CoreGraphics.framework */; };
+		E9C30DEC15EA635D009BA0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9C30DEA15EA635D009BA0FF /* InfoPlist.strings */; };
+		E9C30DEE15EA635D009BA0FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C30DED15EA635D009BA0FF /* main.m */; };
+		E9C30DF215EA635D009BA0FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C30DF115EA635D009BA0FF /* AppDelegate.m */; };
+		E9C30DF515EA635D009BA0FF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C30DF315EA635D009BA0FF /* MainStoryboard.storyboard */; };
+		E9C30DF815EA635D009BA0FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C30DF715EA635D009BA0FF /* ViewController.m */; };
+		E9C30E0015EA635E009BA0FF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C30DFF15EA635E009BA0FF /* SenTestingKit.framework */; };
+		E9C30E0115EA635E009BA0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C30DE115EA635D009BA0FF /* UIKit.framework */; };
+		E9C30E0215EA635E009BA0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C30DE315EA635D009BA0FF /* Foundation.framework */; };
+		E9C30E0A15EA635E009BA0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9C30E0815EA635E009BA0FF /* InfoPlist.strings */; };
+		E9C30E0D15EA635E009BA0FF /* OOP_damyCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C30E0C15EA635E009BA0FF /* OOP_damyCalcTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9C30E0315EA635E009BA0FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9C30DD415EA635D009BA0FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9C30DDC15EA635D009BA0FF;
+			remoteInfo = OOP_damyCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9C30DDD15EA635D009BA0FF /* OOP_damyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OOP_damyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C30DE115EA635D009BA0FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9C30DE315EA635D009BA0FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9C30DE515EA635D009BA0FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9C30DE915EA635D009BA0FF /* OOP_damyCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP_damyCalc-Info.plist"; sourceTree = "<group>"; };
+		E9C30DEB15EA635D009BA0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9C30DED15EA635D009BA0FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9C30DEF15EA635D009BA0FF /* OOP_damyCalc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OOP_damyCalc-Prefix.pch"; sourceTree = "<group>"; };
+		E9C30DF015EA635D009BA0FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9C30DF115EA635D009BA0FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9C30DF415EA635D009BA0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E9C30DF615EA635D009BA0FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9C30DF715EA635D009BA0FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9C30DFE15EA635E009BA0FF /* OOP_damyCalcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OOP_damyCalcTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C30DFF15EA635E009BA0FF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E9C30E0715EA635E009BA0FF /* OOP_damyCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OOP_damyCalcTests-Info.plist"; sourceTree = "<group>"; };
+		E9C30E0915EA635E009BA0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9C30E0B15EA635E009BA0FF /* OOP_damyCalcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OOP_damyCalcTests.h; sourceTree = "<group>"; };
+		E9C30E0C15EA635E009BA0FF /* OOP_damyCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OOP_damyCalcTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C30DDA15EA635D009BA0FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C30DE215EA635D009BA0FF /* UIKit.framework in Frameworks */,
+				E9C30DE415EA635D009BA0FF /* Foundation.framework in Frameworks */,
+				E9C30DE615EA635D009BA0FF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C30DFA15EA635E009BA0FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C30E0015EA635E009BA0FF /* SenTestingKit.framework in Frameworks */,
+				E9C30E0115EA635E009BA0FF /* UIKit.framework in Frameworks */,
+				E9C30E0215EA635E009BA0FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9C30DD215EA635D009BA0FF = {
+			isa = PBXGroup;
+			children = (
+				E9C30DE715EA635D009BA0FF /* OOP_damyCalc */,
+				E9C30E0515EA635E009BA0FF /* OOP_damyCalcTests */,
+				E9C30DE015EA635D009BA0FF /* Frameworks */,
+				E9C30DDE15EA635D009BA0FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C30DDE15EA635D009BA0FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C30DDD15EA635D009BA0FF /* OOP_damyCalc.app */,
+				E9C30DFE15EA635E009BA0FF /* OOP_damyCalcTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C30DE015EA635D009BA0FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9C30DE115EA635D009BA0FF /* UIKit.framework */,
+				E9C30DE315EA635D009BA0FF /* Foundation.framework */,
+				E9C30DE515EA635D009BA0FF /* CoreGraphics.framework */,
+				E9C30DFF15EA635E009BA0FF /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C30DE715EA635D009BA0FF /* OOP_damyCalc */ = {
+			isa = PBXGroup;
+			children = (
+				E9C30DF015EA635D009BA0FF /* AppDelegate.h */,
+				E9C30DF115EA635D009BA0FF /* AppDelegate.m */,
+				E9C30DF315EA635D009BA0FF /* MainStoryboard.storyboard */,
+				E9C30DF615EA635D009BA0FF /* ViewController.h */,
+				E9C30DF715EA635D009BA0FF /* ViewController.m */,
+				E9C30DE815EA635D009BA0FF /* Supporting Files */,
+			);
+			path = OOP_damyCalc;
+			sourceTree = "<group>";
+		};
+		E9C30DE815EA635D009BA0FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9C30DE915EA635D009BA0FF /* OOP_damyCalc-Info.plist */,
+				E9C30DEA15EA635D009BA0FF /* InfoPlist.strings */,
+				E9C30DED15EA635D009BA0FF /* main.m */,
+				E9C30DEF15EA635D009BA0FF /* OOP_damyCalc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9C30E0515EA635E009BA0FF /* OOP_damyCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9C30E0B15EA635E009BA0FF /* OOP_damyCalcTests.h */,
+				E9C30E0C15EA635E009BA0FF /* OOP_damyCalcTests.m */,
+				E9C30E0615EA635E009BA0FF /* Supporting Files */,
+			);
+			path = OOP_damyCalcTests;
+			sourceTree = "<group>";
+		};
+		E9C30E0615EA635E009BA0FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9C30E0715EA635E009BA0FF /* OOP_damyCalcTests-Info.plist */,
+				E9C30E0815EA635E009BA0FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9C30DDC15EA635D009BA0FF /* OOP_damyCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C30E1015EA635E009BA0FF /* Build configuration list for PBXNativeTarget "OOP_damyCalc" */;
+			buildPhases = (
+				E9C30DD915EA635D009BA0FF /* Sources */,
+				E9C30DDA15EA635D009BA0FF /* Frameworks */,
+				E9C30DDB15EA635D009BA0FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OOP_damyCalc;
+			productName = OOP_damyCalc;
+			productReference = E9C30DDD15EA635D009BA0FF /* OOP_damyCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C30DFD15EA635E009BA0FF /* OOP_damyCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C30E1315EA635E009BA0FF /* Build configuration list for PBXNativeTarget "OOP_damyCalcTests" */;
+			buildPhases = (
+				E9C30DF915EA635E009BA0FF /* Sources */,
+				E9C30DFA15EA635E009BA0FF /* Frameworks */,
+				E9C30DFB15EA635E009BA0FF /* Resources */,
+				E9C30DFC15EA635E009BA0FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9C30E0415EA635E009BA0FF /* PBXTargetDependency */,
+			);
+			name = OOP_damyCalcTests;
+			productName = OOP_damyCalcTests;
+			productReference = E9C30DFE15EA635E009BA0FF /* OOP_damyCalcTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C30DD415EA635D009BA0FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "中野 麻美";
+			};
+			buildConfigurationList = E9C30DD715EA635D009BA0FF /* Build configuration list for PBXProject "OOP_damyCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9C30DD215EA635D009BA0FF;
+			productRefGroup = E9C30DDE15EA635D009BA0FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C30DDC15EA635D009BA0FF /* OOP_damyCalc */,
+				E9C30DFD15EA635E009BA0FF /* OOP_damyCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9C30DDB15EA635D009BA0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C30DEC15EA635D009BA0FF /* InfoPlist.strings in Resources */,
+				E9C30DF515EA635D009BA0FF /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C30DFB15EA635E009BA0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C30E0A15EA635E009BA0FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9C30DFC15EA635E009BA0FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C30DD915EA635D009BA0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C30DEE15EA635D009BA0FF /* main.m in Sources */,
+				E9C30DF215EA635D009BA0FF /* AppDelegate.m in Sources */,
+				E9C30DF815EA635D009BA0FF /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C30DF915EA635E009BA0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C30E0D15EA635E009BA0FF /* OOP_damyCalcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9C30E0415EA635E009BA0FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9C30DDC15EA635D009BA0FF /* OOP_damyCalc */;
+			targetProxy = E9C30E0315EA635E009BA0FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9C30DEA15EA635D009BA0FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C30DEB15EA635D009BA0FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9C30DF315EA635D009BA0FF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C30DF415EA635D009BA0FF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E9C30E0815EA635E009BA0FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C30E0915EA635E009BA0FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9C30E0E15EA635E009BA0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9C30E0F15EA635E009BA0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9C30E1115EA635E009BA0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OOP_damyCalc/OOP_damyCalc-Prefix.pch";
+				INFOPLIST_FILE = "OOP_damyCalc/OOP_damyCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9C30E1215EA635E009BA0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OOP_damyCalc/OOP_damyCalc-Prefix.pch";
+				INFOPLIST_FILE = "OOP_damyCalc/OOP_damyCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E9C30E1415EA635E009BA0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP_damyCalc.app/OOP_damyCalc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OOP_damyCalc/OOP_damyCalc-Prefix.pch";
+				INFOPLIST_FILE = "OOP_damyCalcTests/OOP_damyCalcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E9C30E1515EA635E009BA0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OOP_damyCalc.app/OOP_damyCalc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OOP_damyCalc/OOP_damyCalc-Prefix.pch";
+				INFOPLIST_FILE = "OOP_damyCalcTests/OOP_damyCalcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C30DD715EA635D009BA0FF /* Build configuration list for PBXProject "OOP_damyCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C30E0E15EA635E009BA0FF /* Debug */,
+				E9C30E0F15EA635E009BA0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C30E1015EA635E009BA0FF /* Build configuration list for PBXNativeTarget "OOP_damyCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C30E1115EA635E009BA0FF /* Debug */,
+				E9C30E1215EA635E009BA0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9C30E1315EA635E009BA0FF /* Build configuration list for PBXNativeTarget "OOP_damyCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C30E1415EA635E009BA0FF /* Debug */,
+				E9C30E1515EA635E009BA0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9C30DD415EA635D009BA0FF /* Project object */;
+}
