@@ -133,5 +133,6 @@
 }
 
 - (IBAction)ACButton_down:(id)sender {
+    viewLabel.text = @"0";
 }
 @end
