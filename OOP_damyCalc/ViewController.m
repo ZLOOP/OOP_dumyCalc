@@ -44,11 +44,16 @@
 }
 
 - (IBAction)num1Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"1";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"1"];
+    if (arg1 == nil) {
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"1";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"1"];
+        }
+    }else{
+        
     }
+    
 }
 
 - (IBAction)num2Button_down:(id)sender {
