@@ -116,6 +116,16 @@
 }
 
 - (IBAction)addButton_down:(id)sender {
+    ope = @"+";
+    if (arg1 == nil) {
+        arg1 = viewLabel.text;
+        NSLog(@"arg1:%@",arg1);
+    }else if (arg2 == nil){
+        arg2 = viewLabel.text;
+        NSLog(@"arg2:%@",arg2);
+    }else{
+        //計算する
+    }
 }
 
 - (IBAction)subButton_down:(id)sender {
