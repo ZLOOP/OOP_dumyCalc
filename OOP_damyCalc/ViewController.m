@@ -17,14 +17,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    //初期化
+    viewLabel.text = @"0";
+    arg1 = nil;
+    ope = nil;
+    arg2 = nil;
 }
 
 - (void)viewDidUnload
 {
     viewLabel = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -134,5 +138,9 @@
 
 - (IBAction)ACButton_down:(id)sender {
     viewLabel.text = @"0";
+    
+    arg1 = nil;
+    ope = nil;
+    arg2 = nil;
 }
 @end

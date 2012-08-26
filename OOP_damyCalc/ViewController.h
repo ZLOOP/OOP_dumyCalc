@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController{
     __weak IBOutlet UILabel *viewLabel;
+    
+    NSString *arg1; //1つめの数字
+    NSString *ope;  //選択した演算子
+    NSString *arg2; //2つめの数字
 }
 
 - (IBAction)num0Button_down:(id)sender;
