@@ -11,9 +11,13 @@
 @interface ViewController : UIViewController{
     __weak IBOutlet UILabel *viewLabel;
     
+    //計算用
     NSString *arg1; //1つめの数字
     NSString *ope;  //選択した演算子
     NSString *arg2; //2つめの数字
+    
+    //フラグ
+    BOOL arg2Flag;
 }
 
 - (IBAction)num0Button_down:(id)sender;

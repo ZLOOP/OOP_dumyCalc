@@ -23,6 +23,7 @@
     arg1 = nil;
     ope = nil;
     arg2 = nil;
+    arg2Flag = NO;
 }
 
 - (void)viewDidUnload
@@ -44,16 +45,20 @@
 }
 
 - (IBAction)num1Button_down:(id)sender {
-    if (arg1 == nil) {
+    if (arg1 == nil) {//arg1用
         if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
             viewLabel.text = @"1";
         }else{//0でない場合，文字列の右に追加
             viewLabel.text = [viewLabel.text stringByAppendingString:@"1"];
         }
-    }else{
-        
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"1";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"1"];
+        }
     }
-    
 }
 
 - (IBAction)num2Button_down:(id)sender {
@@ -121,15 +126,24 @@
 }
 
 - (IBAction)addButton_down:(id)sender {
-    ope = @"+";
-    if (arg1 == nil) {
+    if (arg2Flag == NO) {
         arg1 = viewLabel.text;
-        NSLog(@"arg1:%@",arg1);
-    }else if (arg2 == nil){
-        arg2 = viewLabel.text;
-        NSLog(@"arg2:%@",arg2);
+        ope = @"+";
     }else{
+        arg2 = viewLabel.text;
+        double ans;
         //計算する
+        if ([ope isEqualToString:@"+"] == YES) ans = [arg1 doubleValue] + [arg2 doubleValue];
+        if ([ope isEqualToString:@"-"] == YES) ans = [arg1 doubleValue] - [arg2 doubleValue];
+        if ([ope isEqualToString:@"*"] == YES) ans = [arg1 doubleValue] * [arg2 doubleValue];
+        if ([ope isEqualToString:@"/"] == YES) ans = [arg1 doubleValue] / [arg2 doubleValue];
+        
+        arg1 = [NSString stringWithFormat:@"%f",ans];
+        viewLabel.text = arg1;
+        arg2 = nil;
+        ope = @"+";
+        arg2Flag = NO;
+        
     }
 }
 
@@ -149,6 +163,21 @@
 }
 
 - (IBAction)equalButton_down:(id)sender {
+    if (arg2Flag == YES) {
+        //計算
+        arg2 = viewLabel.text;
+        double ans;
+        if ([ope isEqualToString:@"+"] == YES) ans = [arg1 doubleValue] + [arg2 doubleValue];
+        if ([ope isEqualToString:@"-"] == YES) ans = [arg1 doubleValue] - [arg2 doubleValue];
+        if ([ope isEqualToString:@"*"] == YES) ans = [arg1 doubleValue] * [arg2 doubleValue];
+        if ([ope isEqualToString:@"/"] == YES) ans = [arg1 doubleValue] / [arg2 doubleValue];
+        
+        arg1 = [NSString stringWithFormat:@"%f",ans];
+        viewLabel.text = arg1;
+        arg2 = nil;
+        ope = nil;
+        arg2Flag = NO;
+    }
 }
 
 - (IBAction)ACButton_down:(id)sender {
@@ -157,5 +186,6 @@
     arg1 = nil;
     ope = nil;
     arg2 = nil;
+    arg2Flag = NO;
 }
 @end
