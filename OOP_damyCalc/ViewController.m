@@ -38,9 +38,21 @@
 }
 
 - (IBAction)num0Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合何もしない
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"0"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合何もしない
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"0"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"0";
+            arg2Flag = YES;
+        }else{
+            if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合何もしない
+            }else{//0でない場合，文字列の右に追加
+                viewLabel.text = [viewLabel.text stringByAppendingString:@"0"];
+            }
+        }
     }
 }
 
@@ -62,66 +74,138 @@
 }
 
 - (IBAction)num2Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"2";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"2"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"2";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"2"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"2";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"2"];
+        }
     }
 }
 
 - (IBAction)num3Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"3";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"3"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"3";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"3"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"3";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"3"];
+        }
     }
 }
 
 - (IBAction)num4Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"4";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"4"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"4";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"4"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"4";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"4"];
+        }
     }
 }
 
 - (IBAction)num5Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"5";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"5"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"5";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"5"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"5";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"5"];
+        }
     }
 }
 
 - (IBAction)num6Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"6";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"6"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"6";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"6"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"6";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"6"];
+        }
     }
 }
 
 - (IBAction)num7Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"7";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"7"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"7";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"7"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"7";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"7"];
+        }
     }
 }
 
 - (IBAction)num8Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"8";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"8"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"8";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"8"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"8";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"8"];
+        }
     }
 }
 
 - (IBAction)num9Button_down:(id)sender {
-    if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
-        viewLabel.text = @"9";
-    }else{//0でない場合，文字列の右に追加
-        viewLabel.text = [viewLabel.text stringByAppendingString:@"9"];
+    if (arg1 == nil) {//arg1用
+        if ([viewLabel.text isEqualToString:@"0"] == YES) {//0の場合上書き
+            viewLabel.text = @"9";
+        }else{//0でない場合，文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"9"];
+        }
+    }else{//arg2用
+        if (arg2Flag == NO) {//初めての入力の場合上書き
+            viewLabel.text = @"9";
+            arg2Flag = YES;
+        }else{//文字列の右に追加
+            viewLabel.text = [viewLabel.text stringByAppendingString:@"9"];
+        }
     }
 }
 
